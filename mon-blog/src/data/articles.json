@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "title": "Festival Paris",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2018/05/10/11/34/concert-3387324_1280.jpg",
+            "alt": "Image du festival se passant à Paris"
+        },
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolores asperiores nulla consequuntur et, quas error modi ipsam repellendus pariatur! Expedita quam sint repudiandae quibusdam voluptatibus asperiores rerum at nam. Nobis sed alias laboriosam voluptatem odit ratione assumenda nostrum temporibus excepturi repudiandae et, laborum vel officia voluptates eos itaque aliquid voluptatum inventore adipisci sapiente sunt perferendis saepe.",
+        "tags": [
+            { "id": 1, "name": "concert", "slug": "concert" },
+            { "id": 2, "name": "Festival", "slug": "festival" },
+            { "id": 3, "name": "Paris", "slug": "paris" }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Escapade en mer",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2023/10/11/13/41/ship-8308680_1280.jpg",
+            "alt": "Escapade en mer"
+        },
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolores asperiores nulla consequuntur et, quas error modi ipsam repellendus pariatur! Expedita quam sint repudiandae quibusdam voluptatibus asperiores rerum at nam. Nobis sed alias laboriosam voluptatem odit ratione assumenda nostrum temporibus excepturi repudiandae et, laborum vel officia voluptates eos itaque aliquid voluptatum inventore adipisci sapiente sunt perferendis saepe.",
+        "tags": [
+              {"id": 1, "name": "Escapade", "slug": "escapade"},
+              {"id": 2, "name": "Tourisme", "slug": "tourisme"},
+              {"id": 3, "name": "Méditerranée", "slug": "mediterranee"}
+            ]   
+    },
+    {
+        "id": 3,
+        "title": "Festival Montpellier",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2016/11/22/19/15/audience-1850119_1280.jpg",
+            "alt": "Image du festival se passant à Montpellier"
+        },
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolores asperiores nulla consequuntur et, quas error modi ipsam repellendus pariatur! Expedita quam sint repudiandae quibusdam voluptatibus asperiores rerum at nam. Nobis sed alias laboriosam voluptatem odit ratione assumenda nostrum temporibus excepturi repudiandae et, laborum vel officia voluptates eos itaque aliquid voluptatum inventore adipisci sapiente sunt perferendis saepe.",
+        "tags": [
+            { "id": 1, "name": "concert", "slug": "concert" },
+            { "id": 2, "name": "Festival", "slug": "festival" },
+            { "id": 3, "name": "Montpellier", "slug": "montpellier" }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Concert Rock",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2016/11/18/15/44/audience-1835431_1280.jpg",
+            "alt": "Image du concert rock"
+        },
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolores asperiores nulla consequuntur et, quas error modi ipsam repellendus pariatur! Expedita quam sint repudiandae quibusdam voluptatibus asperiores rerum at nam. Nobis sed alias laboriosam voluptatem odit ratione assumenda nostrum temporibus excepturi repudiandae et, laborum vel officia voluptates eos itaque aliquid voluptatum inventore adipisci sapiente sunt perferendis saepe.",
+        "tags": [
+            { "id": 1, "name": "concert", "slug": "concert" },
+            { "id": 2, "name": "Rock", "slug": "rock" }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Randonnée en montagne",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2021/02/07/05/15/road-5990128_1280.jpg",
+            "alt": "Randonnée en montagne"
+        },
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolores asperiores nulla consequuntur et, quas error modi ipsam repellendus pariatur! Expedita quam sint repudiandae quibusdam voluptatibus asperiores rerum at nam. Nobis sed alias laboriosam voluptatem odit ratione assumenda nostrum temporibus excepturi repudiandae et, laborum vel officia voluptates eos itaque aliquid voluptatum inventore adipisci sapiente sunt perferendis saepe.",
+        "tags": [
+            { "id": 1, "name": "Escapade", "slug": "escapade" },
+            { "id": 2, "name": "Tourisme", "slug": "tourisme" }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Festival Electro",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg",
+            "alt": "Image du festival électro"
+        },
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolores asperiores nulla consequuntur et, quas error modi ipsam repellendus pariatur! Expedita quam sint repudiandae quibusdam voluptatibus asperiores rerum at nam. Nobis sed alias laboriosam voluptatem odit ratione assumenda nostrum temporibus excepturi repudiandae et, laborum vel officia voluptates eos itaque aliquid voluptatum inventore adipisci sapiente sunt perferendis saepe.",
+        "tags": [
+            { "id": 1, "name": "Festival", "slug": "festival" },
+            { "id": 2, "name": "Electro", "slug": "electro" }
+        ]
+    }
+]
