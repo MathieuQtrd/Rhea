@@ -2,29 +2,21 @@ import Header from './components/Header.jsx'
 import Menu from './components/Nav'
 import Footer from './components/Footer'
 import Article from './components/Article'
+import SearchForm from './components/SearchForm'
 
-import { useState } from 'react'
+import { useContext } from 'react'
+// Appel du context
+import SearchContext from './context/SearchContext'
 
 import articles from './data/articles.json'
 
-import { Container, Row, Form, Button, InputGroup, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 
 function App() {
 
-  const [recherche, changeRecherche] = useState('')
-
-  function handleSubmit(e) {
-    e.preventDefault()
-    const formData = new FormData(e.target)
-    // alert('hello')
-    changeRecherche(formData.get('rechercher'))
-  }
-
-  function handleTagClick(e, tagName) {
-    e.preventDefault()    
-    changeRecherche(tagName)
-  }
+  // const [recherche, changeRecherche] = useContext(SearchContext)
+  const {recherche} = useContext(SearchContext)
 
   const articlesFiltres = articles.filter(data => {
     const valeur = recherche.toLowerCase()
@@ -32,7 +24,7 @@ function App() {
     const rechercheTags = data.tags.some(tag =>
       tag.name.toLowerCase().includes(valeur)
     )
-    return rechercheTags ||  rechercheTitle
+    return rechercheTags || rechercheTitle 
   })
 
   const articleList = articlesFiltres.map(data => (
@@ -42,7 +34,6 @@ function App() {
       img={data.img}
       text={data.text}
       tags={data.tags}
-      onTagClick={handleTagClick}
     />
   ))
 
@@ -54,17 +45,7 @@ function App() {
 
       <Container>
         <Row className='mb-3'>
-          <Col>
-            <Form onSubmit={handleSubmit}>
-              <InputGroup className='mb-3'>
-                <Form.Control 
-                  placeholder="Filtrer les articles"
-                  name="rechercher"
-                />
-                <Button variant="outline-dark" type="submit">Rechercher</Button>
-              </InputGroup>
-            </Form>
-          </Col>
+          <SearchForm />
         </Row>
         <Row>
           {articleList}

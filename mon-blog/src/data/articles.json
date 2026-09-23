@@ -29,15 +29,15 @@
     },
     {
         "id": 3,
-        "title": "Festival Montpellier",
+        "title": "Concert Montpellier",
         "img": {
-            "src": "https://cdn.pixabay.com/photo/2016/11/22/19/15/audience-1850119_1280.jpg",
-            "alt": "Image du festival se passant à Montpellier"
+            "src": "https://cdn.pixabay.com/photo/2016/11/19/09/57/violins-1838390_1280.jpg",
+            "alt": "Image du concert se passant à Montpellier"
         },
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolores asperiores nulla consequuntur et, quas error modi ipsam repellendus pariatur! Expedita quam sint repudiandae quibusdam voluptatibus asperiores rerum at nam. Nobis sed alias laboriosam voluptatem odit ratione assumenda nostrum temporibus excepturi repudiandae et, laborum vel officia voluptates eos itaque aliquid voluptatum inventore adipisci sapiente sunt perferendis saepe.",
         "tags": [
             { "id": 1, "name": "concert", "slug": "concert" },
-            { "id": 2, "name": "Festival", "slug": "festival" },
+            { "id": 2, "name": "Classique", "slug": "classique" },
             { "id": 3, "name": "Montpellier", "slug": "montpellier" }
         ]
     },

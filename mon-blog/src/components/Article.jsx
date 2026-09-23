@@ -1,4 +1,9 @@
 import { Col, Button, Card } from "react-bootstrap";
+
+// import { useContext } from 'react'
+// Appel du context
+import { useSearch } from '../context/SearchContext'
+
 // On vérifie si l'information existe et si elle existe on la parcours avec .map()
 // { tags && tags.map( ...
 
@@ -7,7 +12,18 @@ import { Col, Button, Card } from "react-bootstrap";
 
 // La propriété key permet à react d'identifier chaque élément d'une liste pour gérer les mise à jour du DOM
 
-function Article({title, img, text, tags, onTagClick}) {
+function Article({ title, img, text, tags }) {
+
+    // const {recherche, changeRecherche} = useContext(SearchContext)
+    const {recherche, changeRecherche} = useSearch()
+
+    function handleTagClick(e, tagName) {
+        e.preventDefault()
+        changeRecherche(tagName)
+        console.log(recherche)
+    }
+
+
     return (
         <Col md={4} className="mb-3">
             <Card>
@@ -18,18 +34,18 @@ function Article({title, img, text, tags, onTagClick}) {
                         <a href={"/keyword/" + name} className="btn btn-outline-dark me-3" key={index}>{name}</a>
                     ) )}
                     <hr /> */}
-                    { tags && tags.map((tag) => (
-                        <Button 
+                    {tags && tags.map((tag) => (
+                        <Button
                             as="a"
-                            href={`/tag/${tag.slug}`} 
+                            href={`/tag/${tag.slug}`}
                             variant="outline-dark"
-                            className="me-3" 
+                            className="me-3"
                             key={tag.id}
-                            onClick={(e) => onTagClick(e, tag.name)}
-                            >
-                                {tag.name}
-                            </Button>
-                    ) )}
+                            onClick={(e) => handleTagClick(e, tag.name)}
+                        >
+                            {tag.name}
+                        </Button>
+                    ))}
                     <hr />
                     <Card.Text>
                         {text}
