@@ -1,0 +1,165 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza Margarita",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg",
+            "alt": "Image pizza margarita"
+        },
+        "price": 11,
+        "tags": [
+            { "id": 1, "name": "Tomate", "href": "tomate" },
+            { "id": 2, "name": "Emmental", "href": "emmental" },
+            { "id": 3, "name": "Champignons", "href": "champignons" }
+        ],
+        "category": { "id": 1, "name": "Pizza"}
+    },
+    {
+        "id": 2,
+        "name": "Burger",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_1280.jpg",
+            "alt": "Image burger"
+        },
+        "price": 12,
+        "tags": [
+            { "id": 1, "name": "Tomate", "href": "tomate" },
+            { "id": 2, "name": "Emmental", "href": "emmental" },
+            { "id": 4, "name": "Oignons", "href": "oignons" },
+            { "id": 5, "name": "Boeuf", "href": "boeuf" }
+        ],
+        "category": { "id": 2, "name": "Burger"}
+    },
+    {
+        "id": 3,
+        "name": "Frites",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2016/11/20/09/06/bowl-1842294_1280.jpg",
+            "alt": "Image Frites"
+        },
+        "price": 4,
+        "tags": [
+            { "id": 6, "name": "Frites", "href": "frites" }
+        ],
+        "category": { "id": 3, "name": "Accompagnements"}
+    },
+    {
+        "id": 4,
+        "name": "Club sandwitch + frites",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2018/07/14/21/30/club-sandwich-3538455_1280.jpg",
+            "alt": "Image Club sandwitcha"
+        },
+        "price": 14,
+        "tags": [
+            { "id": 7, "name": "Menu", "href": "menu" },
+            { "id": 8, "name": "Salade", "href": "salade" },
+            { "id": 9, "name": "Jambon", "href": "jambon" },
+            { "id": 6, "name": "Frites", "href": "frites" }
+        ],
+        "category": { "id": 4, "name": "Club sandwitch"}
+    },
+    {
+        "id": 5,
+        "name": "Poulet frit",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2020/03/28/14/51/fried-chicken-4977349_1280.jpg",
+            "alt": "Image Poulet frit"
+        },
+        "price": 9,
+        "tags": [
+            { "id": 10, "name": "Poulet", "href": "poulet" }
+        ],
+        "category": { "id": 5, "name": "Viande"}
+    },
+    {
+        "id": 6,
+        "name": "Kebab rouleau + frites",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2022/05/05/14/55/kebab-7176351_1280.jpg",
+            "alt": "Image Kebab rouleau + frites"
+        },
+        "price": 11,
+        "tags": [
+            { "id": 11, "name": "Agneau", "href": "agneau" },
+            { "id": 4, "name": "Oignons", "href": "oignons" },
+            { "id": 6, "name": "Frites", "href": "frites" },
+            { "id": 7, "name": "Menu", "href": "menu" }
+        ],
+        "category": { "id": 6, "name": "Kebab"}
+    },
+    {
+        "id": 7,
+        "name": "Crêpes",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2019/01/10/20/31/pancakes-3926009_1280.jpg",
+            "alt": "Image Crêpes"
+        },
+        "price": 5,
+        "tags": [
+            { "id": 12, "name": "Chantilly", "href": "chantilly" },
+            { "id": 13, "name": "Sucres", "href": "sucres" }
+        ],
+        "category": { "id": 12, "name": "Dessert"}
+    },
+    {
+        "id": 8,
+        "name": "Cappuccino",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2018/11/25/10/31/beverage-3837111_1280.jpg",
+            "alt": "Image Cappuccino"
+        },
+        "price": 5,
+        "tags": [
+            { "id": 14, "name": "Café", "href": "café" },
+            { "id": 15, "name": "Crême", "href": "creme" }
+        ],
+        "category": { "id": 13, "name": "Boisson"}
+    },
+    {
+        "id": 9,
+        "name": "Salade Tomate mozzarella",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2018/08/29/09/21/dish-3639491_1280.jpg",
+            "alt": "Image Tomate mozzarella"
+        },
+        "price": 7,
+        "tags": [
+            { "id": 15, "name": "Mozzarella", "href": "mozzarella" },
+            { "id": 1, "name": "Tomate", "href": "tomate" },
+            { "id": 8, "name": "Salade", "href": "salade" }
+        ],
+        "category": { "id": 14, "name": "Salade"}
+    },
+    {
+        "id": 10,
+        "name": "Salade figue chèvre",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2016/09/15/19/24/salad-1672505_1280.jpg",
+            "alt": "Image Salade figue chèvre"
+        },
+        "price": 8,
+        "tags": [
+            { "id": 16, "name": "Figue", "href": "figue" },
+            { "id": 17, "name": "Chèvre", "href": "chevre" },
+            { "id": 8, "name": "Salade", "href": "salade" }
+        ],
+        "category": { "id": 13, "name": "Salade"}
+    },
+    {
+        "id": 11,
+        "name": "Salade Oeuf oignons",
+        "img": {
+            "src": "https://cdn.pixabay.com/photo/2015/12/16/09/40/salad-plate-1095648_1280.jpg",
+            "alt": "Image Oeuf oignons"
+        },
+        "price": 7,
+        "tags": [
+            { "id": 18, "name": "Oeuf", "href": "oeuf" },
+            { "id": 4, "name": "Oignons", "href": "oignons" },
+            { "id": 8, "name": "Salade", "href": "salade" }
+        ],
+        "category": { "id": 13, "name": "Salade"}
+    }
+]
+

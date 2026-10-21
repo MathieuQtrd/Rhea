@@ -1,0 +1,22 @@
+header  {
+  background-image: url("./assets/images/bg_header.jpg");
+  background-size: cover;
+  color: white;
+}
+header > div {
+  background-color: rgba(0,0,0,0.7);
+  z-index:9;
+  padding: 70px 0 70px 0 !important;
+}
+.playfair {
+  font-family: "Playfair", serif;
+  font-size: 140px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.cursor {
+  cursor: pointer;
+}
