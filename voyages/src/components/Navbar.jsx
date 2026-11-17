@@ -18,12 +18,15 @@ function Navbar() {
                     <Nav.Link as={NavLink} to="/search">
                         Rechercher
                     </Nav.Link>
+                    <Nav.Link as={NavLink} to="/contact">
+                        Contact
+                    </Nav.Link>
                     <Nav.Link as={NavLink} to="/about">
                         A propos
                     </Nav.Link>
                 </Nav>
             </Container>
-        </BootstrapNavbar>            
+        </BootstrapNavbar>
     )
 }
 

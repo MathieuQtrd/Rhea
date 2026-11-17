@@ -9,6 +9,7 @@ import DestinationsPage from "../pages/DestinationsPage"
 import HomePage from "../pages/HomePage"
 import NotFoundPage from "../pages/NotFoundPage"
 import SearchPage from "../pages/SearchPage"
+import ContactPage from "../pages/ContactPage"
 
 const router = createBrowserRouter([
     {
@@ -35,8 +36,12 @@ const router = createBrowserRouter([
                 element: <SearchPage />
             },
             {
+                path: "contact",
+                element: <ContactPage />
+            },
+            {
                 path: "about",
-                element: <SearchPage />
+                element: <AboutPage />
             },
             {
                 path: "*",
