@@ -1,0 +1,10 @@
+- src/
+    - api/
+        - apiClient.js
+    - app/
+        - store.js
+    - features/
+        - auth/
+            - authSlice.js
+        - contact/
+            - contactSlice.js
