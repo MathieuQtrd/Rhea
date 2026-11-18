@@ -6,6 +6,40 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useEffect } from "react";
 import { useNavigate, Navigate } from "react-router-dom"
 
+// dispatch et useSelector
+import { useDispatch, useSelector } from "react-redux";
+import { registerUser } from "../features/auth/authSlice";
+
+/*
+# POST /api/auth/register.php
+
+    Créer un compte utilisateur.
+
+    Token nécessaire : non
+    Rôle admin : non
+
+    Champs à fournir
+    {
+        "username": "mathieu",
+        "email": "mathieu@mail.fr",
+        "password": "Password@123",
+        "firstName": "Mathieu",
+        "lastName": "Quittard",
+        "gender": "male",
+        "avatar": "https://..."
+    }
+
+    Contraintes
+        username    obligatoire, unique
+        email       obligatoire, unique
+        password    obligatoire
+        firstName   obligatoire
+        lastName    obligatoire
+        gender      optionnel
+        avatar      optionnel
+
+*/
+
 const registerSchema = yup.object({
   username: yup
     .string()
@@ -39,6 +73,25 @@ const registerSchema = yup.object({
 });
 function RegisterPage() {
 
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+  const { status, error } = useSelector((state) => state.auth)
+
+  const onSubmit = async (data) => {
+    try {
+      await dispatch(registerUser(data)).unwrap()
+      // navigate('/login')
+    } catch(error) {
+      if( error.message.includes('username') || error.message.includes('email') ) {
+        setError('username', {
+          type: 'server',
+          message: 'Ce login ou cet email est déjà utilisé'
+        })
+      }
+    }
+  }
+
   const {
     register,
     handleSubmit,
@@ -57,15 +110,13 @@ function RegisterPage() {
     }
   })
 
-  const onSubmit = () => {
-
-  }
-
-
   return (
     <Card className="mx-auto w-75 shadow-sm border-0">
       <Card.Body>
         <h1 className="mb-3 pb-3 border-bottom">Inscription</h1>
+        {error && (
+          <Alert variant="danger">{error}</Alert>
+        )}
         <Form onSubmit={handleSubmit(onSubmit)}>
           <Form.Group controlId="username">
             <Form.Label>Login</Form.Label>

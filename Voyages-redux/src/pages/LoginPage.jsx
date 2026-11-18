@@ -5,6 +5,12 @@ import { yupResolver } from "@hookform/resolvers/yup"
 import { useNavigate, Navigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 
+import { useDispatch, useSelector } from "react-redux"
+import { loginUser } from "../features/auth/authSlice"
+
+// Compte admin par défaut
+// login : admin 
+// password : Admin@123
 
 const loginSchema = yup.object({
     username: yup
@@ -17,6 +23,9 @@ const loginSchema = yup.object({
 
 function LoginPage() {
 
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const { status, error } = useSelector((state) => state.auth)
 
 
     const [apiError, setApiError] = useState("")
@@ -35,8 +44,17 @@ function LoginPage() {
     })
 
     const onSubmit = async (data) => {
-        setApiError("")
+        // setApiError("")
+        try {
+            await dispatch(loginUser(data)).unwrap()
+            // .unwrap() est une methode de redux toolkit
+            // Succès : retourne les données
+            // Echec : throw error
 
+            // redirection vers profil
+        } catch(error) {
+            console.log(error)
+        }
        
     }
 
